@@ -1,0 +1,25 @@
+/* Small Devices (300px and up) */
+@media (min-width: 300px) { .nav-search { width: 250px !important; margin-right: 5px; }}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { .nav-search { width: 450px !important; margin-right: 5px; }}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { .nav-search { width: 600px !important; margin-right: 5px; } }
+
+.search-row {
+  display: inline-flex;
+}
+
+.navbar-form {
+  margin-bottom: 0px !important;
+}
+
+.cardd {
+  width: 500px;
+}
+
+.info-btn {
+  justify-content: right;
+  float: right;
+}
