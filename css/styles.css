@@ -58,30 +58,55 @@ div.item p {
   padding: 10px 16px 16px 16px;
 }
 
-div.item p.flex {
+div.item div.card-content p {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-div.item p a, div.item a {
-  color: #000;
-  font-weight: 400;
-  font-size: 1.1em;
+.card-content {
+  padding: 15px 20px !important;
 }
 
-.card-title a{
+.flex {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px !important;
+}
+
+.card-meta{
+  padding-bottom: 20px !important;
+}
+
+a.title{
+  color: #2c2a2a;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding-right: 20px;
 }
 
-div.item.card p.card-overview {
-  word-wrap: break-word;
+.vote_average{
+  font-size: 17px;
+  padding-top: 0;
+  margin-right: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-overview {
+  display: block !important;
   white-space: normal;
-  color: #4d4d4d;
   font-size: 0.9em;
+  text-overflow: ellipsis;
   line-height: 1.2em;
   margin-top: 30px;
 }
@@ -91,5 +116,5 @@ div.item.card p.card-overview {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 10px;
+  padding: 10px !important;
 }

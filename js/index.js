@@ -4,7 +4,9 @@ $(document).ready(() => {
     getSearch(searchText);
     event.preventDefault();
   });
+  $('#home-results').on('load', getDiscover());
 });
+
 
 function getSearch(searchText) {
   console.log('search: ', searchText);
@@ -15,8 +17,6 @@ function getSearch(searchText) {
       let output = `<h4>Search Results</h4>`;
       console.log(results);
       $.each(results, (index, result) => {
-        /* let str = result.overview;
-        let overview = cutString(str, 50); */
         output += `
         <div class="col col-md-6 item">
         <div class="card horizontal">
@@ -25,12 +25,18 @@ function getSearch(searchText) {
           </div>
           <div class="card-stacked info">
             <div class="card-content">
-              <p card-title flex>
-                <a>${result.name || result.title}</a>
+              <p class='card-title flex'>
+                <a class='title'>${result.name || result.title}</a>
                 <span class='vote_average'>${result.vote_average}
-                <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
               </p>
-              <p card-meta flex></p>
+              <p class='card-meta flex'>
+                <span class='release_date'>
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  ${result.release_date}
+                </span>
+              </p>
               <p class="card-overview">${result.overview || ''}</p>
               <p class='card-footer'>
                 <a href="#" class="btn btn-primary info-btn">More Info</a>
@@ -59,3 +65,4 @@ function getSearch(searchText) {
       return strShort;
      }
 } */
+
