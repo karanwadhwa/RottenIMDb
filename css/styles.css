@@ -1,5 +1,13 @@
 /* Small Devices (300px and up) */
-@media (min-width: 300px) { .nav-search { width: 250px !important; margin-right: 5px; }}
+@media (min-width: 300px) {
+  .nav-search {
+   width: 250px !important; margin-right: 5px;
+  }
+  .card-image img{
+    height: 278px !important;
+    width: 185px !important;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { .nav-search { width: 450px !important; margin-right: 5px; }}
@@ -7,16 +15,26 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { .nav-search { width: 600px !important; margin-right: 5px; } }
 
-body{
-  margin-bottom: 200px !important;
-}
-
 .search-row {
   display: inline-flex;
 }
 
 .navbar-form {
   margin-bottom: 0px !important;
+}
+
+.footer {
+  background: linear-gradient(to top right, #2455a9, #00d573);
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 200px;
+}
+
+#home-main{
+  padding-bottom: 150px;
 }
 
 .cardd {
@@ -42,9 +60,9 @@ body{
 }
 
 div.item p {
-  white-space: nowrap;
+/*   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
   padding: 0;
   width: 100%;
   line-height: 1.2em;
@@ -52,6 +70,7 @@ div.item p {
 
 .card-image img{
   height: 278px !important;
+/*   width: 100% !important; */
 }
 
 .info {
@@ -80,7 +99,7 @@ div.item div.card-content p {
 }
 
 .card-meta{
-  padding-bottom: 20px !important;
+  padding-bottom: 30px !important;
 }
 
 a.title{
@@ -111,8 +130,11 @@ a.title{
   white-space: normal;
   font-size: 0.9em;
   text-overflow: ellipsis;
+  word-wrap: break-word;
   line-height: 1.2em;
   margin-top: 30px;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .card-footer{

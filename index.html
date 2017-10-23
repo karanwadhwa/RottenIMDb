@@ -20,7 +20,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="#"><strong class="text-primary">RottenIMDb</strong> <span class="sr-only">(current)</span></a>
+          <a onclick='getDiscoverMovies()' class="navbar-brand" href="#"><strong class="text-primary">RottenIMDb</strong> <span class="sr-only">(current)</span></a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,10 +37,11 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" id="home-main">
 
     <div id="home-results"></div>
   </div>
+  <div class="footer"></div>
 </body>
 <script
 src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -51,4 +52,5 @@ crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/index.js"></script>
 <script src="https://use.fontawesome.com/b8cd9f3a13.js"></script>
+
 </html>
